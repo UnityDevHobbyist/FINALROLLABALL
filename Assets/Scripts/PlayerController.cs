@@ -70,11 +70,11 @@ public class PlayerController : MonoBehaviour
 		movementY = v.y;
 	}
 
-	void SetCountText()
+	async void SetCountText()
 	{
 		countText.text = "Count: " + count.ToString();
 
-		if (count == 8)
+		if (count == 10)
 		{
 			// Set the text value of your 'winText'
 			winTextObject.SetActive(true);
